@@ -13,5 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\01-Project-1">
+      <UniqueIdentifier>{c3c6d4e3-307a-45b9-8f79-3cc807a10365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\02-Project-2">
+      <UniqueIdentifier>{2c96fcad-c666-4772-b151-34d9524674c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clsUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsDate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="01-Project-1\clsUtil library.cpp">
+      <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
