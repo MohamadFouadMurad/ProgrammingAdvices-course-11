@@ -30,10 +30,16 @@
     <ClInclude Include="clsString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="clsInputValidate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\clsUtil library.cpp">
       <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
+    <ClCompile Include="02-Project-2\Input and Validation library.cpp">
+      <Filter>Source Files\02-Project-2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
