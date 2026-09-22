@@ -123,8 +123,26 @@ public:
 		return Number;
 	}
 
+	static double ReadFloatNumber(string ErrorMessage = "Invalid Number, Enter again\n")
+	{
+		float Number;
+		while (!(cin >> Number)) {
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cout << ErrorMessage;
+		}
+		return Number;
+	}
+
 	static bool IsValidDate(clsDate Date)
 	{
 		return clsDate::IsValid(Date);
+	}
+
+	static string ReadString()
+	{
+		string  S1 = "";
+		getline(cin >> ws, S1);
+		return S1;
 	}
 };

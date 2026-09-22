@@ -19,6 +19,9 @@
     <Filter Include="Source Files\02-Project-2">
       <UniqueIdentifier>{2c96fcad-c666-4772-b151-34d9524674c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\03-Project-3">
+      <UniqueIdentifier>{568156fa-2c9e-4e76-9a3b-91880bf95f6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -33,6 +36,12 @@
     <ClInclude Include="clsInputValidate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="clsPerson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsBankClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\clsUtil library.cpp">
@@ -40,6 +49,12 @@
     </ClCompile>
     <ClCompile Include="02-Project-2\Input and Validation library.cpp">
       <Filter>Source Files\02-Project-2</Filter>
+    </ClCompile>
+    <ClCompile Include="03-Project-3\01-Findclient.cpp">
+      <Filter>Source Files\03-Project-3</Filter>
+    </ClCompile>
+    <ClCompile Include="03-Project-3\02-Updateclient.cpp">
+      <Filter>Source Files\03-Project-3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
