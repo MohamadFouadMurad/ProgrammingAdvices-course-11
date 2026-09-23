@@ -12,12 +12,13 @@ class clsBankClient : public clsPerson
 {
 private:
 
-	enum enMode { EmptyMode = 0, UpdateMode = 1 };
+	enum enMode { EmptyMode = 0, UpdateMode = 1 , AddNewMode = 2};
 	enMode _Mode;
 
 	string _AccountNumber;
 	string _PinCode;
 	float _AccountBalance;
+	bool _MarkedForDelete = false;
 
 	static clsBankClient _ConvertLineToClientObject(string Line, string Seperator = "#//#")
 	{
@@ -50,6 +51,11 @@ private:
 
 	}
 
+	bool MarkedForDeleted()
+	{
+		return _MarkedForDelete;
+	}
+
 	static void _SaveCleintsDataToFile(vector <clsBankClient> vClients)
 	{
 
@@ -63,9 +69,13 @@ private:
 
 			for (clsBankClient & C : vClients)
 			{
-				DataLine = _ConverClientObjectToLine(C);
-				MyFile << DataLine << endl;
+				if (C.MarkedForDeleted() == false)
+				{
+					//we only write records that are not marked for delete.  
+					DataLine = _ConverClientObjectToLine(C);
+					MyFile << DataLine << endl;
 
+				}
 			}
 
 			MyFile.close();
@@ -104,6 +114,21 @@ private:
 
 	}
 
+	void _AddDataLineToFile(string  stDataLine)
+	{
+		fstream MyFile;
+		MyFile.open("Clients.txt", ios::out | ios::app);
+
+		if (MyFile.is_open())
+		{
+
+			MyFile << stDataLine << endl;
+
+			MyFile.close();
+		}
+
+	}
+
 	void _Update()
 	{
 		vector <clsBankClient> _vClients;
@@ -119,6 +144,12 @@ private:
 		}
 
 		_SaveCleintsDataToFile(_vClients);
+	}
+
+	void _AddNew()
+	{
+
+		_AddDataLineToFile(_ConverClientObjectToLine(*this));
 	}
 
 public:
@@ -247,7 +278,7 @@ public:
 		return (!Client1.IsEmpty());
 	}
 
-	enum enSaveResults { svFaildEmptyObject = 0, svSucceeded = 1 };
+	enum enSaveResults { svFaildEmptyObject = 0, svSucceeded = 1 , svFaildAccountNumberExists =2};
 
 	enSaveResults Save()
 	{
@@ -266,9 +297,70 @@ public:
 
 			break;
 		}
+
+		case enMode::AddNewMode:
+		{
+			//This will add new record to file or database
+			if (clsBankClient::IsClientExist(_AccountNumber))
+			{
+				return enSaveResults::svFaildAccountNumberExists;
+			}
+			else
+			{
+				_AddNew();
+
+				//We need to set the mode to update after add new
+				_Mode = enMode::UpdateMode;
+				return enSaveResults::svSucceeded;
+			}
+
+			break;
+		}
+
 		}
 	}
 
+	static clsBankClient GetAddNewClientObject(string AccountNumber)
+	{
+		return clsBankClient("", "", "", "", enMode::AddNewMode, AccountNumber, "", 0);
+	}
 
+	bool Delete()
+	{
+		vector <clsBankClient> _vClient;
+		_vClient = _LoadClientsDataFromFile();
+
+		for (clsBankClient& C : _vClient)
+		{
+			if (C.AccountNumber() == _AccountNumber)
+			{
+				C._MarkedForDelete = true;
+				break;
+			}
+		}
+
+		_SaveCleintsDataToFile(_vClient);
+		*this = _GetEmptyClientObject();
+		return true;
+	}
+
+	static vector <clsBankClient> GetClientsList()
+	{
+		return _LoadClientsDataFromFile();
+	}
+
+	static float GetTotalBalances()
+	{
+		vector <clsBankClient> vClients = clsBankClient::GetClientsList();
+
+		double Totalbalances = 0;
+
+		for (clsBankClient Clients : vClients)
+		{
+			Totalbalances += Clients.AccountBalance;
+		}
+
+		return Totalbalances;
+	}
 };
 
