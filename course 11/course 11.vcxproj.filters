@@ -22,6 +22,9 @@
     <Filter Include="Source Files\03-Project-3">
       <UniqueIdentifier>{568156fa-2c9e-4e76-9a3b-91880bf95f6d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\04-Project-3-UI-Main menu">
+      <UniqueIdentifier>{007234e0-c23f-459a-a980-e50b177d6014}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -40,6 +43,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="clsBankClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMainScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsClientListScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -67,6 +79,12 @@
     </ClCompile>
     <ClCompile Include="03-Project-3\06-Total balance.cpp">
       <Filter>Source Files\03-Project-3</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\01-Main Screen.cpp">
+      <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\02-List Client Screen.cpp">
+      <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

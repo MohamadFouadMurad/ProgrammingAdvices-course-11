@@ -80,6 +80,19 @@ public:
 		return Number;
 	}
 
+	static short ReadShortNumberBetween(short From, short To, string Message)
+	{
+		short Number = ReadIntNumber("Invalid Number, Enter Again\n");
+
+		while (!IsNumberBetween(Number, From, To))
+		{
+			cout << Message << endl;
+			Number = ReadIntNumber("Invalid Number, Enter Again\n");
+		}
+
+		return Number;
+	}
+
 	static int ReadIntNumberBetween(int From, int To, string Message)
 	{
 		int Number = ReadIntNumber("Invalid Number, Enter Again\n");
