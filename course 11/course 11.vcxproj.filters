@@ -54,6 +54,18 @@
     <ClInclude Include="clsClientListScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="clsAddNewClientScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsDeleteClientScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsUpdateClientScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsFindClientScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\clsUtil library.cpp">
@@ -84,6 +96,18 @@
       <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
     </ClCompile>
     <ClCompile Include="04-Project-3-UI-Main menu\02-List Client Screen.cpp">
+      <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\03-Add New Client Screen.cpp">
+      <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\04-Delete Client Screen.cpp">
+      <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\05-Update Client Screen.cpp">
+      <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\06-Find Client Screen.cpp">
       <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
     </ClCompile>
   </ItemGroup>

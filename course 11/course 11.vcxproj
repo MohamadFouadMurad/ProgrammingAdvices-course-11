@@ -139,14 +139,18 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="clsAddNewClientScreen.h" />
     <ClInclude Include="clsBankClient.h" />
     <ClInclude Include="clsClientListScreen.h" />
     <ClInclude Include="clsDate.h" />
+    <ClInclude Include="clsDeleteClientScreen.h" />
+    <ClInclude Include="clsFindClientScreen.h" />
     <ClInclude Include="clsInputValidate.h" />
     <ClInclude Include="clsMainScreen.h" />
     <ClInclude Include="clsPerson.h" />
     <ClInclude Include="clsScreen.h" />
     <ClInclude Include="clsString.h" />
+    <ClInclude Include="clsUpdateClientScreen.h" />
     <ClInclude Include="clsUtil.h" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +184,16 @@
     <ClCompile Include="04-Project-3-UI-Main menu\02-List Client Screen.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\03-Add New Client Screen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\04-Delete Client Screen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\05-Update Client Screen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="04-Project-3-UI-Main menu\06-Find Client Screen.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
