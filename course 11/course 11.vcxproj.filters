@@ -25,6 +25,9 @@
     <Filter Include="Source Files\04-Project-3-UI-Main menu">
       <UniqueIdentifier>{007234e0-c23f-459a-a980-e50b177d6014}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\05-Project-3-UI-Transaction menu">
+      <UniqueIdentifier>{5e547e56-2165-46e1-b849-db4f824609f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -64,6 +67,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="clsFindClientScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsTransactionsScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsDepositScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsWithdrawScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsTotalBalancesScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -109,6 +124,18 @@
     </ClCompile>
     <ClCompile Include="04-Project-3-UI-Main menu\06-Find Client Screen.cpp">
       <Filter>Source Files\04-Project-3-UI-Main menu</Filter>
+    </ClCompile>
+    <ClCompile Include="05-Project-3-UI-Transaction menu\01-Transaction Screen.cpp">
+      <Filter>Source Files\05-Project-3-UI-Transaction menu</Filter>
+    </ClCompile>
+    <ClCompile Include="05-Project-3-UI-Transaction menu\02-Deposit Screen.cpp">
+      <Filter>Source Files\05-Project-3-UI-Transaction menu</Filter>
+    </ClCompile>
+    <ClCompile Include="05-Project-3-UI-Transaction menu\03-Withdraw Screen.cpp">
+      <Filter>Source Files\05-Project-3-UI-Transaction menu</Filter>
+    </ClCompile>
+    <ClCompile Include="05-Project-3-UI-Transaction menu\04-Total balances Screen.cpp">
+      <Filter>Source Files\05-Project-3-UI-Transaction menu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

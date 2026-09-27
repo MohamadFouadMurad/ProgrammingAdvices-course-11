@@ -106,7 +106,7 @@ public:
 		return Number;
 	}
 
-	static double ReadDblNumber(string Message)
+	static double ReadDblNumber(string Message = "Error , pls enter a another number?")
 	{
 		double Number = 0;
 		cin >> Number;
