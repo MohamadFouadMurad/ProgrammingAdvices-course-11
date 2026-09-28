@@ -28,6 +28,9 @@
     <Filter Include="Source Files\05-Project-3-UI-Transaction menu">
       <UniqueIdentifier>{5e547e56-2165-46e1-b849-db4f824609f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\06-Project-3-UI-Manage Users menu">
+      <UniqueIdentifier>{dcf67101-d6f1-475b-90d5-a6748527149d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -136,6 +139,27 @@
     </ClCompile>
     <ClCompile Include="05-Project-3-UI-Transaction menu\04-Total balances Screen.cpp">
       <Filter>Source Files\05-Project-3-UI-Transaction menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\01-Manage Users Screen.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\02-Prepare User class.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\03-List Users Screen.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\04-Add new User Screen.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\05-Delete User Screen.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\06-Update User Screen.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\07-Find User Screen.cpp">
+      <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
