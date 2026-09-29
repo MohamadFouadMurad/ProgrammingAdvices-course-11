@@ -140,12 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="clsAddNewClientScreen.h" />
+    <ClInclude Include="clsAddNewUserScreen.h" />
     <ClInclude Include="clsBankClient.h" />
     <ClInclude Include="clsClientListScreen.h" />
     <ClInclude Include="clsDate.h" />
     <ClInclude Include="clsDeleteClientScreen.h" />
+    <ClInclude Include="clsDeleteUserScreen.h" />
     <ClInclude Include="clsDepositScreen.h" />
     <ClInclude Include="clsFindClientScreen.h" />
+    <ClInclude Include="clsFindUserScreen.h" />
     <ClInclude Include="clsInputValidate.h" />
     <ClInclude Include="clsMainScreen.h" />
     <ClInclude Include="clsManageUsersScreen.h" />
@@ -155,7 +158,9 @@
     <ClInclude Include="clsTotalBalancesScreen.h" />
     <ClInclude Include="clsTransactionsScreen.h" />
     <ClInclude Include="clsUpdateClientScreen.h" />
+    <ClInclude Include="clsUpdateUserScreen.h" />
     <ClInclude Include="clsUser.h" />
+    <ClInclude Include="clsUsersListScreen.h" />
     <ClInclude Include="clsUtil.h" />
     <ClInclude Include="clsWithdrawScreen.h" />
   </ItemGroup>
@@ -217,7 +222,9 @@
     <ClCompile Include="06-Project-3-UI-Manage Users menu\01-Manage Users Screen.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="06-Project-3-UI-Manage Users menu\02-Prepare User class.cpp" />
+    <ClCompile Include="06-Project-3-UI-Manage Users menu\02-Prepare User class.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="06-Project-3-UI-Manage Users menu\03-List Users Screen.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
