@@ -31,6 +31,12 @@
     <Filter Include="Source Files\06-Project-3-UI-Manage Users menu">
       <UniqueIdentifier>{dcf67101-d6f1-475b-90d5-a6748527149d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\07-Project-3-Login And Permissions">
+      <UniqueIdentifier>{1bc0fbe9-68a5-4969-ab72-64af395b9886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08-Bank Extension 1">
+      <UniqueIdentifier>{1dfe6658-e619-4db6-8000-400276133546}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -103,6 +109,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="clsFindUserScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsLoginScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -181,6 +193,21 @@
     </ClCompile>
     <ClCompile Include="06-Project-3-UI-Manage Users menu\07-Find User Screen.cpp">
       <Filter>Source Files\06-Project-3-UI-Manage Users menu</Filter>
+    </ClCompile>
+    <ClCompile Include="07-Project-3-Login And Permissions\01-Login.cpp">
+      <Filter>Source Files\07-Project-3-Login And Permissions</Filter>
+    </ClCompile>
+    <ClCompile Include="07-Project-3-Login And Permissions\02-Logout.cpp">
+      <Filter>Source Files\07-Project-3-Login And Permissions</Filter>
+    </ClCompile>
+    <ClCompile Include="07-Project-3-Login And Permissions\03-Show Login Screen at Logout.cpp">
+      <Filter>Source Files\07-Project-3-Login And Permissions</Filter>
+    </ClCompile>
+    <ClCompile Include="07-Project-3-Login And Permissions\04-Apply Permissions.cpp">
+      <Filter>Source Files\07-Project-3-Login And Permissions</Filter>
+    </ClCompile>
+    <ClCompile Include="08-Bank Extension 1\01-Add Date And Logged in User in all Screens.cpp">
+      <Filter>Source Files\08-Bank Extension 1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

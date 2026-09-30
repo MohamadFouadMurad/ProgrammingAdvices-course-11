@@ -1,5 +1,9 @@
 #pragma once
 #include <iostream>
+#include "clsUser.h"
+#include "Global.h"
+#include "clsDate.h"
+#include "clsUtil.h"
 using namespace std;
 
 
@@ -7,6 +11,16 @@ class clsScreen
 {
 
 protected:
+
+    static void _PrintCurrentDateAndUser()
+    {
+        cout << clsUtil::Tabs(5) << "User: " << CurrentUser.UserName << endl;
+
+        clsDate Date = clsDate::DateToString(clsDate());
+
+        cout << clsUtil::Tabs(5) << "Date: ";
+        Date.Print();
+    }
 
     static void _DrawScreenHeader(string Title, string SubTitle = "")
     {
@@ -19,6 +33,33 @@ protected:
         }
 
         cout << "\n\t\t\t\t\t______________________________________\n\n";
+
+        //easy Solution
+        /*
+        cout << clsUtil::Tabs(5) << "User: " << CurrentUser.UserName << endl;
+        cout << clsUtil::Tabs(5) << "Date: " << clsDate::DateToString(clsDate()) << endl;
+        */
+
+
+       _PrintCurrentDateAndUser();
     }
+
+    static bool CheckAccessRights(clsUser::enPermissions Permission)
+    {
+
+        if (!CurrentUser.CheckAccessPermission(Permission))
+        {
+            cout << "\t\t\t\t\t______________________________________";
+            cout << "\n\n\t\t\t\t\t  Access Denied! Contact your Admin.";
+            cout << "\n\t\t\t\t\t______________________________________\n\n";
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+
+    }
+
 };
 
