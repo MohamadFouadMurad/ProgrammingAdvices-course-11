@@ -1025,8 +1025,8 @@ public:
 		tm* now = localtime(&t);
 
 		string DateTime = "";
-		DateTime += to_string(now->tm_hour);
-		DateTime += to_string(now->tm_min);
+		DateTime += to_string(now->tm_hour) + ":";
+		DateTime += to_string(now->tm_min) + ":";
 		DateTime += to_string(now->tm_sec);
 
 		return DateTime;

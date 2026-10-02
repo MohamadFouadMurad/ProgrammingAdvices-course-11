@@ -43,6 +43,12 @@
     <Filter Include="Source Files\010-Bank Extension 3">
       <UniqueIdentifier>{8f439b30-1e99-4d09-a2e1-53998fb10e3d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\011-Bank Extension 4">
+      <UniqueIdentifier>{8e99d8a3-62ab-4dba-9bb9-7070b09b921d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\012-Bank Extension 5">
+      <UniqueIdentifier>{54e4e0a9-095b-4833-abb9-6e5205938360}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -121,6 +127,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsLoginRegisterScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -220,6 +229,12 @@
     </ClCompile>
     <ClCompile Include="010-Bank Extension 3\01-Register Logins In a Log File.cpp">
       <Filter>Source Files\010-Bank Extension 3</Filter>
+    </ClCompile>
+    <ClCompile Include="011-Bank Extension 4\01-Show Login Register Screen.cpp">
+      <Filter>Source Files\011-Bank Extension 4</Filter>
+    </ClCompile>
+    <ClCompile Include="012-Bank Extension 5\01-Permission to Show Log Register Screen.cpp">
+      <Filter>Source Files\012-Bank Extension 5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
