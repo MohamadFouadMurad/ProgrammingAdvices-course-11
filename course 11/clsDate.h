@@ -1018,7 +1018,23 @@ public:
 	{
 		return CalculateVacationReturnDate(*this, VacationDays);
 	}
+
+	static string GetSystemTime()
+	{
+		time_t t = time(0);
+		tm* now = localtime(&t);
+
+		string DateTime = "";
+		DateTime += to_string(now->tm_hour);
+		DateTime += to_string(now->tm_min);
+		DateTime += to_string(now->tm_sec);
+
+		return DateTime;
+	}
+
+	static string GetSystemDateTimeString()
+	{
+		return DateToString(clsDate()) + " - " + GetSystemTime();
+	}
+
 };
-
-
-
