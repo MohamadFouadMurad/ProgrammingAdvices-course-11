@@ -49,6 +49,12 @@
     <Filter Include="Source Files\012-Bank Extension 5">
       <UniqueIdentifier>{54e4e0a9-095b-4833-abb9-6e5205938360}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\013-Bank Extension 6">
+      <UniqueIdentifier>{d4f90107-fbf0-40d0-b0a5-4c39731c6a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\014-Bank Extension 7">
+      <UniqueIdentifier>{735bf334-faa4-46ff-87b1-ee2b8f6ab569}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -130,6 +136,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="clsLoginRegisterScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsTransferScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -235,6 +244,12 @@
     </ClCompile>
     <ClCompile Include="012-Bank Extension 5\01-Permission to Show Log Register Screen.cpp">
       <Filter>Source Files\012-Bank Extension 5</Filter>
+    </ClCompile>
+    <ClCompile Include="013-Bank Extension 6\01-Transfer Screen.cpp">
+      <Filter>Source Files\013-Bank Extension 6</Filter>
+    </ClCompile>
+    <ClCompile Include="014-Bank Extension 7\01-create Transfer log.cpp">
+      <Filter>Source Files\014-Bank Extension 7</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
