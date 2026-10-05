@@ -12,6 +12,19 @@ using namespace std;
 
 class clsBankClient : public clsPerson
 {
+public:
+
+	struct stTransferLog
+	{
+		string DateTime;
+		string sAcc;
+		string dAcc;
+		float amount;
+		float sBalance;
+		float dBalance;
+		string UserName;
+	};
+
 private:
 
 	enum enMode { EmptyMode = 0, UpdateMode = 1 , AddNewMode = 2};
@@ -25,6 +38,8 @@ private:
 	static clsBankClient _ConvertLineToClientObject(string Line, string Seperator = "#//#")
 	{
 		vector <string> vClinetDate;
+
+
 		vClinetDate = clsString::Split(Line, Seperator);
 
 		return clsBankClient(vClinetDate[0], vClinetDate[1], vClinetDate[2],
@@ -179,6 +194,23 @@ private:
 
 			MyFile.close();
 		}
+	}
+
+	static stTransferLog _ConvertTransferLogLineToRecord(string Line, string Seperator = "#//#")
+	{
+		stTransferLog TransferLogRecord;
+		
+		vector <string> TransferLogDataLine = clsString::Split(Line, Seperator);
+
+		TransferLogRecord.DateTime = TransferLogDataLine[0];
+		TransferLogRecord.sAcc = TransferLogDataLine[1];
+		TransferLogRecord.dAcc = TransferLogDataLine[2];
+		TransferLogRecord.amount = stof(TransferLogDataLine[3]);
+		TransferLogRecord.sBalance = stof(TransferLogDataLine[4]);
+		TransferLogRecord.dBalance = stof(TransferLogDataLine[5]);
+		TransferLogRecord.UserName = TransferLogDataLine[6];
+
+		return TransferLogRecord;
 	}
 
 public:
@@ -429,5 +461,37 @@ public:
 		_RegisterTransferLogin(Amount, DestinationClient, User);
 		return true;
 	}
+
+	static vector <stTransferLog> GetTransferLogList()
+	{
+		vector <stTransferLog> vTransferLog;
+
+		fstream MyFile;
+		MyFile.open("TransferLog.txt", ios::in);//read Mode
+
+		if (MyFile.is_open())
+		{
+
+			string Line;
+
+			stTransferLog TransferLog;
+
+			while (getline(MyFile, Line))
+			{
+
+				TransferLog = _ConvertTransferLogLineToRecord(Line);
+
+				vTransferLog.push_back(TransferLog);
+
+			}
+
+			MyFile.close();
+
+		}
+
+		return vTransferLog;
+
+	}
+	
 };
 
