@@ -58,6 +58,12 @@
     <Filter Include="Source Files\015-Bank Extension 8">
       <UniqueIdentifier>{e3f47335-eb93-4f36-a631-546dc1e9830e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\016-Bank Extension 9">
+      <UniqueIdentifier>{0653bed2-3e30-4186-bd43-3bac953e940c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\017-Bank Extension 10">
+      <UniqueIdentifier>{b3ced085-aa21-474b-b1a2-f2140038ccf1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -145,6 +151,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="clsTransferLogScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceCommunication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -259,6 +268,12 @@
     </ClCompile>
     <ClCompile Include="015-Bank Extension 8\01-Show Transfers Log Screen.cpp">
       <Filter>Source Files\015-Bank Extension 8</Filter>
+    </ClCompile>
+    <ClCompile Include="016-Bank Extension 9\01-Encrypt password In File.cpp">
+      <Filter>Source Files\016-Bank Extension 9</Filter>
+    </ClCompile>
+    <ClCompile Include="017-Bank Extension 10\01-Abstract ClassInterface Practical Example.cpp">
+      <Filter>Source Files\017-Bank Extension 10</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

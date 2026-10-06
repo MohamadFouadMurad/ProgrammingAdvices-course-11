@@ -168,6 +168,7 @@
     <ClInclude Include="clsUtil.h" />
     <ClInclude Include="clsWithdrawScreen.h" />
     <ClInclude Include="Global.h" />
+    <ClInclude Include="InterfaceCommunication.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\clsUtil library.cpp">
@@ -188,7 +189,13 @@
     <ClCompile Include="014-Bank Extension 7\01-create Transfer log.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="015-Bank Extension 8\01-Show Transfers Log Screen.cpp" />
+    <ClCompile Include="015-Bank Extension 8\01-Show Transfers Log Screen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="016-Bank Extension 9\01-Encrypt password In File.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="017-Bank Extension 10\01-Abstract ClassInterface Practical Example.cpp" />
     <ClCompile Include="02-Project-2\Input and Validation library.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
