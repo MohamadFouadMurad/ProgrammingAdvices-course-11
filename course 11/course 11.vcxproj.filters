@@ -64,6 +64,12 @@
     <Filter Include="Source Files\017-Bank Extension 10">
       <UniqueIdentifier>{b3ced085-aa21-474b-b1a2-f2140038ccf1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\018-Currency Exchange 1">
+      <UniqueIdentifier>{7356ea43-525b-4aa8-952e-8d4c4c66510c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\019-Currency Exchange 2">
+      <UniqueIdentifier>{c997e669-2b77-46c6-bdd0-516bb0fdb2aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -154,6 +160,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InterfaceCommunication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrencyExchangeMainScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrenciesListScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -274,6 +289,12 @@
     </ClCompile>
     <ClCompile Include="017-Bank Extension 10\01-Abstract ClassInterface Practical Example.cpp">
       <Filter>Source Files\017-Bank Extension 10</Filter>
+    </ClCompile>
+    <ClCompile Include="018-Currency Exchange 1\01-Prepare Currency Object.cpp">
+      <Filter>Source Files\018-Currency Exchange 1</Filter>
+    </ClCompile>
+    <ClCompile Include="019-Currency Exchange 2\01-Currency Main Screen.cpp">
+      <Filter>Source Files\019-Currency Exchange 2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
