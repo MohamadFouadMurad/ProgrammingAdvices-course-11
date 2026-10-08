@@ -70,6 +70,15 @@
     <Filter Include="Source Files\019-Currency Exchange 2">
       <UniqueIdentifier>{c997e669-2b77-46c6-bdd0-516bb0fdb2aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\020-Currency Exchange 3">
+      <UniqueIdentifier>{7ee1292e-ebaf-408a-9947-e85f2702f72e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\021-Currency Exchange 4">
+      <UniqueIdentifier>{70ae7229-7fde-48ca-9f5a-f6eb8d757a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\022-Currency Exchange 5">
+      <UniqueIdentifier>{65a4b135-a73a-43bd-b586-14786cf61489}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsUtil.h">
@@ -169,6 +178,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="clsCurrenciesListScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsFindCurrencyScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsUpdateCurrencyRateScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrencyCalculatorScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -295,6 +313,15 @@
     </ClCompile>
     <ClCompile Include="019-Currency Exchange 2\01-Currency Main Screen.cpp">
       <Filter>Source Files\019-Currency Exchange 2</Filter>
+    </ClCompile>
+    <ClCompile Include="020-Currency Exchange 3\01-Find Currency.cpp">
+      <Filter>Source Files\020-Currency Exchange 3</Filter>
+    </ClCompile>
+    <ClCompile Include="021-Currency Exchange 4\01-Update Rate.cpp">
+      <Filter>Source Files\021-Currency Exchange 4</Filter>
+    </ClCompile>
+    <ClCompile Include="022-Currency Exchange 5\01-Currency Calculator Screen.cpp">
+      <Filter>Source Files\022-Currency Exchange 5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

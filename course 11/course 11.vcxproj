@@ -145,12 +145,14 @@
     <ClInclude Include="clsClientListScreen.h" />
     <ClInclude Include="clsCurrenciesListScreen.h" />
     <ClInclude Include="clsCurrency.h" />
+    <ClInclude Include="clsCurrencyCalculatorScreen.h" />
     <ClInclude Include="clsCurrencyExchangeMainScreen.h" />
     <ClInclude Include="clsDate.h" />
     <ClInclude Include="clsDeleteClientScreen.h" />
     <ClInclude Include="clsDeleteUserScreen.h" />
     <ClInclude Include="clsDepositScreen.h" />
     <ClInclude Include="clsFindClientScreen.h" />
+    <ClInclude Include="clsFindCurrencyScreen.h" />
     <ClInclude Include="clsFindUserScreen.h" />
     <ClInclude Include="clsInputValidate.h" />
     <ClInclude Include="clsLoginRegisterScreen.h" />
@@ -165,6 +167,7 @@
     <ClInclude Include="clsTransferLogScreen.h" />
     <ClInclude Include="clsTransferScreen.h" />
     <ClInclude Include="clsUpdateClientScreen.h" />
+    <ClInclude Include="clsUpdateCurrencyRateScreen.h" />
     <ClInclude Include="clsUpdateUserScreen.h" />
     <ClInclude Include="clsUser.h" />
     <ClInclude Include="clsUsersListScreen.h" />
@@ -208,6 +211,15 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="02-Project-2\Input and Validation library.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="020-Currency Exchange 3\01-Find Currency.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="021-Currency Exchange 4\01-Update Rate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="022-Currency Exchange 5\01-Currency Calculator Screen.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="03-Project-3\01-Findclient.cpp">
