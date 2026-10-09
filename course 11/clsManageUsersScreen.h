@@ -3,7 +3,7 @@
 #include "clsScreen.h"
 #include "clsInputValidate.h"
 #include <iomanip>
-#include "clsUsersListScreen.h"
+#include "clsListUsersScreen.h"
 #include "clsAddNewUserScreen.h"
 #include "clsDeleteUserScreen.h"
 #include "clsUpdateUserScreen.h"
@@ -24,7 +24,7 @@ private:
     static short ReadManageUsersMenueOption()
     {
         cout << setw(37) << left << "" << "Choose what do you want to do? [1 to 6]? ";
-        short Choice = clsInputValidate::ReadShortNumberBetween(1, 6, "Enter Number between 1 to 6? ");
+        short Choice = clsInputValidate::ReadNumberBetween<short>(1, 6, "Enter Number between 1 to 6? ");
         return Choice;
     }
 
@@ -38,7 +38,7 @@ private:
     static void _ShowListUsersScreen()
     {
         //cout << "\nList Users Screen Will Be Here.\n";
-        clsUsersListScreen::ShowUsersList();
+        clsListUsersScreen::ShowUsersList();
     }
 
     static void _ShowAddNewUserScreen()

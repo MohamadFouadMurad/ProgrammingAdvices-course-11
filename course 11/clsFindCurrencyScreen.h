@@ -55,7 +55,7 @@ public:
 
 		short Choice;
 		cout << "Find By : [1] Code or [2] Country ? " << endl;
-		Choice = clsInputValidate::ReadShortNumberBetween(1, 2 , "pls Enter Number Between [1] Code and [2] Country?");
+		Choice = clsInputValidate::ReadNumberBetween<short>(1, 2 , "pls Enter Number Between [1] Code and [2] Country?");
 
 
 		switch (Choice)

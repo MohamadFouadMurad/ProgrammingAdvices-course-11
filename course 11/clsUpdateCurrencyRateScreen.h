@@ -30,7 +30,7 @@ private:
 
 		cout << "Enter New Rate: ";
 		float NewRate = 0;
-		NewRate = clsInputValidate::ReadFloatNumber();
+		NewRate = clsInputValidate::ReadNumber<float>();
 
 		cout << "\nCurrency Rate Updated Successfully :-)" << endl;
 

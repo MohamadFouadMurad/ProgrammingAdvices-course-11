@@ -1,0 +1,1 @@
+//Change Some Functions to Template Functions in clsInputAndValidation

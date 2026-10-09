@@ -10,44 +10,15 @@ class clsInputValidate
 
 public:
 
-	static bool IsNumberBetween(int Number, int From, int To)
+	template <typename T> 
+	static bool IsNumberBetween(T Number, T From, T To)
 	{
-		if (Number >= From && Number <= To)
+		if (From > To)
 		{
-			return true;
+			return (Number >= To && Number <= From);
 		}
 
-		return false;
-	}
-
-	static bool IsNumberBetween(short Number,short From,short To)
-	{
-		if (Number >= From && Number <= To)
-		{
-			return true;
-		}
-
-		return false;
-	}
-
-	static bool IsNumberBetween(float Number, float From, float To)
-	{
-		if (Number >= From && Number <= To)
-		{
-			return true;
-		}
-
-		return false;
-	}
-
-	static bool IsNumberBetween(double Number,double From,double To)
-	{
-		if (Number >= From && Number <= To)
-		{
-			return true;
-		}
-
-		return false;
+		return (Number >= From && Number <= To);
 	}
 
 	static bool IsDateBetween(clsDate DateNow, clsDate From, clsDate To)
@@ -63,9 +34,10 @@ public:
 		return (isAfterOrEqualFrom && isBeforeOrEqualTo);
 	}
 
-	static int ReadIntNumber(string Message)
+	template <typename T>
+	static T ReadNumber(string ErrorMessage = "Error , pls enter a another number?\n")
 	{
-		int Number=0;
+		T Number=0;
 		cin >> Number;
 
 		while (cin.fail())
@@ -73,77 +45,24 @@ public:
 			// user didn't input a number
 			cin.clear();
 			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			cout << Message << endl;
+			cout << ErrorMessage << endl;
 			cin >> Number;
 		}
 
 		return Number;
 	}
-
-	static short ReadShortNumberBetween(short From, short To, string Message)
+	
+	template <typename T> 
+	static T ReadNumberBetween(T From,T To, string Message)
 	{
-		short Number = ReadIntNumber("Invalid Number, Enter Again\n");
+		T Number = ReadNumber<T>();
 
 		while (!IsNumberBetween(Number, From, To))
 		{
 			cout << Message << endl;
-			Number = ReadIntNumber("Invalid Number, Enter Again\n");
+			Number = ReadNumber<T>();
 		}
 
-		return Number;
-	}
-
-	static int ReadIntNumberBetween(int From, int To, string Message)
-	{
-		int Number = ReadIntNumber("Invalid Number, Enter Again\n");
-
-		while (!IsNumberBetween(Number,From,To))
-		{
-			cout << Message << endl;
-			Number = ReadIntNumber("Invalid Number, Enter Again\n");
-		}
-
-		return Number;
-	}
-
-	static double ReadDblNumber(string Message = "Error , pls enter a another number?")
-	{
-		double Number = 0;
-		cin >> Number;
-
-		while (cin.fail())
-		{
-			// user didn't input a number
-			cin.clear();
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			cout << Message << endl;
-			cin >> Number;
-		}
-
-		return Number;
-	}
-
-	static double ReadDblNumberBetween(double From, double To, string Message)
-	{
-		double Number = ReadDblNumber("Invalid Number, Enter Again\n");
-
-		while (!IsNumberBetween(Number, From, To))
-		{
-			cout << Message << endl;
-			Number = ReadDblNumber("Invalid Number, Enter Again\n");
-		}
-
-		return Number;
-	}
-
-	static double ReadFloatNumber(string ErrorMessage = "Invalid Number, Enter again\n")
-	{
-		float Number;
-		while (!(cin >> Number)) {
-			cin.clear();
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
-			cout << ErrorMessage;
-		}
 		return Number;
 	}
 

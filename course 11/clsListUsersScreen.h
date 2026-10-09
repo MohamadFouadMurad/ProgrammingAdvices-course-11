@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class clsUsersListScreen : protected clsScreen
+class clsListUsersScreen : protected clsScreen
 {
 
 private:
